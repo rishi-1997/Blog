@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/blog.css" %}">
+    <title>{% block title_block %}{% endblock %}</title>
+</head>
+<body>
+    <div class="content">
+        {% block containt_block %}{% endblock %}
+    </div>
+    <div class="sidebar">
+        <h2>RISHI'S BLOG</h2>
+        <p>here you can see python updation!!</p>
+    </div>
+</body>
+</html>
